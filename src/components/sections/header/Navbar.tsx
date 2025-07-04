@@ -1,8 +1,8 @@
 import CommonWrapper from '@/components/common/CommonWrapper'
 import React from 'react'
 import { VscThreeBars } from "react-icons/vsc";
-import { PiShoppingCartThin } from "react-icons/pi";
 import { GoSearch } from "react-icons/go";
+import CartIcon from '@/components/common/CartIcon';
 
 const Navbar = () => {
     const categorys = [
@@ -13,33 +13,42 @@ const Navbar = () => {
         { id: 5, name: "News" },
         { id: 6, name: "Contact" },
     ];
-  return (
-    <CommonWrapper>
-        <div className='flex flex-col md:flex-row items-center justify-between gap-4 p-4 text-gray-500 bg-gray-100 rounded-lg shadow-md w-full'>
-            <div className='flex items-center justify-between gap-4 p-4 text-4xl'>
-                <VscThreeBars />
-                <p>|</p>
-                <div>
-                    <PiShoppingCartThin className='relative '/>
-                    <p className='w-6 h-6 bg-blue-500 rounded-full text-white absolute p-1 text-center text-sm'>02</p>
+    return (
+        <CommonWrapper>
+            <div className="flex flex-col md:flex-row items-center justify-between gap-4 text-gray-500 rounded-md w-full px-2 py-3">
+                {/* Left: Hamburger, Cart, Search */}
+                <div className="flex items-center gap-4 text-2xl w-full md:w-auto justify-between md:justify-start">
+                    <button className="md:hidden">
+                        <VscThreeBars />
+                    </button>
+                    <div className="hidden md:block">
+                        <VscThreeBars />
+                    </div>
+                    <span className="hidden md:block">|</span>
+                    <CartIcon count={3} />
+                    <span className="hidden md:block">|</span>
+                    <GoSearch />
                 </div>
-                <p>|</p>
-                <GoSearch />
+                {/* Center: Menu */}
+                <div className="w-full md:w-auto flex flex-col md:flex-row items-center justify-center gap-2 md:gap-8 text-xl">
+                    {categorys.map((category) => (
+                        <p
+                            key={category.id}
+                            className="hover:text-blue-500 cursor-pointer px-2 py-1"
+                        >
+                            {category.name}
+                        </p>
+                    ))}
+                </div>
+                {/* Right: Button */}
+                <div className="w-full md:w-auto flex justify-center md:justify-end mt-2 md:mt-0">
+                    <button className="bg-blue-500 text-white rounded-md px-4 py-2 w-full md:w-auto">
+                        Get a free quote
+                    </button>
+                </div>
             </div>
-                <div className='flex items-center justify-between gap-4 p-4 text-2xl'>
-                    {
-                        categorys.map((category) => (
-                            <p key={category.id} className='hover:text-blue-500 cursor-pointer'>{category.name}</p>
-                        ))
-                    }
-                </div>
-                <div>
-                    <button className='bg-blue-500 text-white rounded-md px-2 py-3'>Get a free quote</button>
-                </div>
-            
-        </div>
-    </CommonWrapper>
-  )
+        </CommonWrapper>
+    )
 }
 
 export default Navbar
