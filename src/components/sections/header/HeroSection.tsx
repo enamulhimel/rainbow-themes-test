@@ -7,6 +7,8 @@ import Avatar from '@/components/common/Avatar'
 import image1 from '../../../app/image-1.png'
 import image2 from '../../../app/image-2.png'
 import image3 from '../../../app/image-3.png'
+import banner from '../../../app/Banner Img.png'
+import circleWatch from '../../../app/Circle Button.png'
 
 
 const HeroSection = () => {
@@ -37,6 +39,10 @@ const HeroSection = () => {
            <div className='flex flex-row items-center gap-4 mt-8'>
                 <Avatar images={[image1.src, image2.src, image3.src]} extraCount={10} size={10} /> 
                 <p className='text-base text-[#838A95] pl-20'><span className='text-blue-500'>2.5K+</span> Business Peoples <br />Already Registered</p> 
+            </div>
+            <div className='relative'>
+                <div className='absolute w-[1135px] h-[605px] left-130 -top-80'><img src={banner.src} alt="" /></div>
+                <div className='absolute right-9 -top-100'><img src={circleWatch.src} alt="" /></div>
             </div>     
     </div>
     </CommonWrapper>
