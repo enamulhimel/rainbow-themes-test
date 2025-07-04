@@ -3,6 +3,7 @@ import React from 'react'
 import { VscThreeBars } from "react-icons/vsc";
 import { GoSearch } from "react-icons/go";
 import CartIcon from '@/components/common/CartIcon';
+import Button from '@/components/common/Button';
 
 const Navbar = () => {
     const categorys = [
@@ -17,7 +18,7 @@ const Navbar = () => {
         <CommonWrapper>
             <div className="flex flex-col md:flex-row items-center justify-between gap-4 text-gray-500 rounded-md w-full px-2 py-3">
                 {/* Left: Hamburger, Cart, Search */}
-                <div className="flex items-center gap-4 text-2xl w-full md:w-auto justify-between md:justify-start">
+                <div className="flex items-center gap-4 text-2xl w-full md:w-auto justify-between cursor-pointer md:justify-start">
                     <button className="md:hidden">
                         <VscThreeBars />
                     </button>
@@ -42,9 +43,7 @@ const Navbar = () => {
                 </div>
                 {/* Right: Button */}
                 <div className="w-full md:w-auto flex justify-center md:justify-end mt-2 md:mt-0">
-                    <button className="bg-blue-500 text-white rounded-md px-4 py-2 w-full md:w-auto">
-                        Get a free quote
-                    </button>
+                    <Button label='Get a free quote'/>
                 </div>
             </div>
         </CommonWrapper>
