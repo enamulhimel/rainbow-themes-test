@@ -2,6 +2,7 @@ import Company from '@/components/common/Company'
 import React from 'react'
 import Navbar from './Navbar'
 import HeroSection from './HeroSection'
+import GradientBanner from '../banner/GradientBanner'
 
 const Header = () => {
   return (
@@ -9,6 +10,7 @@ const Header = () => {
         <Company/>
         <Navbar/>
         <HeroSection/>
+        <GradientBanner/>
     </div>
   )
 }

@@ -9,6 +9,7 @@ import image2 from '../../../app/image-2.png'
 import image3 from '../../../app/image-3.png'
 import banner from '../../../app/Banner Img.png'
 import circleWatch from '../../../app/Circle Button.png'
+import GradientBanner from '../banner/GradientBanner'
 
 
 const HeroSection = () => {
@@ -45,6 +46,7 @@ const HeroSection = () => {
                 <div className='absolute right-9 -top-100'><img src={circleWatch.src} alt="" /></div>
             </div>     
     </div>
+    
     </CommonWrapper>
   )
 }
