@@ -3,6 +3,7 @@ import React from 'react'
 import Navbar from './Navbar'
 import HeroSection from './HeroSection'
 import GradientBanner from '../banner/GradientBanner'
+import Solution from '../solution/Solution'
 
 const Header = () => {
   return (
@@ -10,8 +11,14 @@ const Header = () => {
         <Company/>
         <Navbar/>
         <HeroSection/>
-        <div className="absolute bottom-[-40px] left-0 w-full z-20">
+        <div className="absolute bottom-[-50px] left-0 w-full z-20">
           <GradientBanner />
+        </div>
+        <div className='mt-70'>
+          <Solution/>
+        </div>
+        <div className='mt-70'>
+          <Solution/>
         </div>
     </div>
   )
