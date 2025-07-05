@@ -4,6 +4,7 @@ import Navbar from './Navbar'
 import HeroSection from './HeroSection'
 import GradientBanner from '../banner/GradientBanner'
 import Solution from '../solution/Solution'
+import Services from '../services/Services'
 
 const Header = () => {
   return (
@@ -17,8 +18,8 @@ const Header = () => {
         <div className='mt-70'>
           <Solution/>
         </div>
-        <div className='mt-70'>
-          <Solution/>
+        <div className='mt-30'>
+          <Services/>
         </div>
     </div>
   )
