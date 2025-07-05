@@ -10,7 +10,9 @@ const Header = () => {
         <Company/>
         <Navbar/>
         <HeroSection/>
-        <GradientBanner/>
+        <div className="absolute bottom-[-40px] left-0 w-full z-20">
+          <GradientBanner />
+        </div>
     </div>
   )
 }
