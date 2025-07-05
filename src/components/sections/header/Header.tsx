@@ -6,6 +6,7 @@ import GradientBanner from '../banner/GradientBanner'
 import Solution from '../solution/Solution'
 import Services from '../services/Services'
 import Works from '../works/works'
+import Testimoni from '../testimonial/Testimoni'
 
 const Header = () => {
   return (
@@ -24,6 +25,9 @@ const Header = () => {
         </div>
         <div>
           <Works/>
+        </div>
+        <div>
+          <Testimoni/>
         </div>
     </div>
   )
