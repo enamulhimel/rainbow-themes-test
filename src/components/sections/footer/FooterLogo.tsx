@@ -74,15 +74,15 @@ const FooterLogo = () => {
                 <div className="flex flex-row gap-x-3">
                   <img className="w-10 h-10" src={image2.src} alt="" />
                   <div>
-                    <p>Bussiness Councilling</p>
-                    <p className="text-gray-400">26 March, USA</p>
+                    <p>Email Marketing</p>
+                    <p className="text-gray-400">30 January, London</p>
                   </div>
                 </div>
                 <div className="flex flex-rowm  gap-x-3">
                   <img className="w-10 h-10" src={image1.src} alt="" />
                   <div>
                     <p>Bussiness Councilling</p>
-                    <p className="text-gray-400">26 March, USA</p>
+                    <p className="text-gray-400">16 May, Maxico</p>
                   </div>
                 </div>
               </div>
