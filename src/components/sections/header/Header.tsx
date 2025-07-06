@@ -7,6 +7,7 @@ import Solution from '../solution/Solution';
 import Services from '../services/Services';
 import Works from '../works/works';
 import Testimoni from '../testimonial/Testimoni';
+import Footer from '../footer/Footer';
 
 const Header = () => {
   return (
@@ -30,6 +31,9 @@ const Header = () => {
       </div>
       <div className="mt-170">
         <Testimoni />
+      </div>
+      <div>
+        <Footer />
       </div>
     </div>
   );
