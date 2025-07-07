@@ -14,8 +14,8 @@ const FooterLogo = () => {
   return (
     <div className="relative bg-[url('/images/Footer-bg.png')] bg-cover bg-center bg-no-repeat py-20">
       <CommonWrapper>
-        <div className="w-full flex flex-row gap-x-1">
-          <div className="bg-[#110431] w-1/3 p-5 items-center justify-center">
+        <div className="w-full flex flex-col md:flex-row gap-x-1">
+          <div className="bg-[#110431] md:w-1/3 p-5 items-center justify-center">
             <img src={logo.src} alt="" />
             <p className="text-white">
               Introducing our team of talented and skilled professionals who are
@@ -38,7 +38,7 @@ const FooterLogo = () => {
               </div>
             </div>
           </div>
-          <div className="w-2/3 bg-[#110431] text-white p-5 flex flex-row items-center justify-between">
+          <div className="md:w-2/3 bg-[#110431] text-white p-5 flex md:flex-row flex-col items-start md:items-center justify-between">
             <div>
               <h3 className="font-bold ">Quick Links</h3>
               <div className="text-base py-2">

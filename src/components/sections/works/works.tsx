@@ -58,25 +58,17 @@ const Works = () => {
         </div>
 
         {/* Projects List */}
-        <div className="flex flex-wrap flex-row justify-center gap-6">
+        <div className="flex flex-col flex-wrap md:flex-row items-center justify-center gap-6">
           {/* Active Project */}
-          <div className="w-[320px] sm:w-[360px] rounded-xl overflow-hidden bg-white md:absolute md:h-[700px] md:top-0 md:left-45 md:">
+          <div className="md:w-[500px] w-[360px] rounded-xl overflow-hidden bg-white md:absolute md:h-[700px] md:top-0 md:left-65">
             <Image
               src={active}
               alt="active"
               className="w-full h-auto object-cover"
             />
-            {/* <div className="p-4">
-              <span className="text-xs px-2 py-1 bg-purple-100 text-purple-600 rounded">
-                2024, Business
-              </span>
-              <h3 className="text-lg font-semibold mt-2">
-                Business Consulting Service
-              </h3>
-            </div> */}
           </div>
           {/* Project 1 */}
-          <div className="w-[280px] sm:w-[320px] h-auto rounded-xl overflow-hidden bg-white md:absolute md:left-120 md:bottom-20 md:h-[500px]">
+          <div className="md:w-[350px] w-[360px] h-auto rounded-xl overflow-hidden bg-white md:absolute md:left-170 md:bottom-15 md:h-[500px]">
             <Image
               src={project2}
               alt="project1"
@@ -85,7 +77,7 @@ const Works = () => {
           </div>
 
           {/* Project 2 */}
-          <div className="w-[220px] sm:w-[280px] h-auto rounded-xl overflow-hidden bg-white relative">
+          <div className="md:w-[300px] w-[360px] h-auto rounded-xl overflow-hidden bg-white md:ml-200 relative">
             <Image
               src={project1}
               alt="project2"

@@ -14,22 +14,24 @@ const Header = () => {
     <div className="">
       <Company />
       <Navbar />
-      <div>
-        <HeroSection />
+      <div className="flex flex-col">
+        <div>
+          <HeroSection />
+        </div>
+        <div className="md:absolute md:left-0 md:-bottom-80 w-full md:z-20">
+          <GradientBanner />
+        </div>
       </div>
-      <div className="absolute left-0 w-full z-20">
-        <GradientBanner />
-      </div>
-      <div className="mt-70">
+      <div className="md:mt-100">
         <Solution />
       </div>
-      <div className="mt-30">
+      <div className="">
         <Services />
       </div>
       <div>
         <Works />
       </div>
-      <div className="mt-170">
+      <div className="">
         <Testimoni />
       </div>
       <div>

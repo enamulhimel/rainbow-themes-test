@@ -7,10 +7,19 @@ interface StatsCardProps {
   className?: string;
 }
 
-const StatsCard: React.FC<StatsCardProps> = ({ value, label, isActive = false, className = '' }) => {
+const StatsCard: React.FC<StatsCardProps> = ({
+  value,
+  label,
+  isActive = false,
+  className = '',
+}) => {
   return (
     <div
-      className={`flex flex-col items-center p-4 ${className} ${isActive ? 'border-t-4 border-blue-600' : 'border-t-4 border-transparent'}`}
+      className={`flex flex-col items-center p-4 ${className} ${
+        isActive
+          ? 'border-t-4 border-blue-600'
+          : 'border-t-4 border-transparent'
+      }`}
     >
       <span className="text-5xl font-bold text-gray-800">{value}</span>
       <span className="text-sm text-gray-600">{label}</span>
@@ -20,7 +29,7 @@ const StatsCard: React.FC<StatsCardProps> = ({ value, label, isActive = false, c
 
 const StatsRow: React.FC = () => {
   return (
-    <div className="flex justify-between gap-x-20 w-full max-w-4xl ">
+    <div className="flex flex-col md:flex-row md:justify-between md:items-center md:gap-x-20 md:w-full max-w-4xl ">
       <StatsCard value="99%" label="Business Strategy" isActive={true} />
       <StatsCard value="80%" label="Targeted Acquisition" />
       <StatsCard value="62K+" label="Complete Projects" />

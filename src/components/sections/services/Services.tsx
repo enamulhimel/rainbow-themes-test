@@ -7,28 +7,28 @@ import Button from '@/components/common/Button';
 
 const Services = () => {
   return (
-    <div className="relative bg-[url('/images/Mask-group.png')] bg-cover bg-center bg-no-repeat py-20">
+    <div className="relative bg-[url('/images/Mask-group.png')] bg-cover bg-center bg-no-repeat">
       <CommonWrapper>
         <div className="">
           <div className="flex flex-col items-center justify-center gap-y-5">
             <GradientButton label="What we do" />
             <p className="text-5xl font-semibold">Our Popular Services</p>
           </div>
-          <div className="relative pt-10">
-            <div className="absolute w-200 left-50">
+          <div className="relative md:pt-10">
+            <div className="absolute w-80  md:w-200 md:left-50">
               <img src={blur.src} alt="" />
             </div>
-            <div className="absolute w-220 top-23 left-40">
+            <div className="md:absolute w-80 md:w-220 md:top-23 md:left-40">
               <img src={blur.src} alt="" />
             </div>
-            <div className="absolute w-240 top-35 left-30">
+            <div className="md:absolute w-80 md:w-240 md:top-35 md:left-30">
               <img src={blur.src} alt="" />
             </div>
-            <div className="absolute w-260 top-50 left-20">
+            <div className="md:absolute w-80 md:w-260 md:top-50 md:left-20">
               <img src={clear.src} alt="" />
             </div>
           </div>
-          <div className="pt-140 flex items-center justify-center">
+          <div className="pt-5 md:pt-140 flex items-center justify-center">
             <Button label="view all services" />
           </div>
         </div>

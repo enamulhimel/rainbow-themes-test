@@ -13,9 +13,9 @@ import circleWatch from '../../../app/Circle Button.png';
 const HeroSection = () => {
   return (
     <CommonWrapper>
-      <div className="flex flex-row">
+      <div className="flex flex-col md:flex-row">
         <div>
-          <div className="text-8xl font-bold">
+          <div className="text-4xl md:text-8xl font-bold">
             <p>We Shap the future </p>
             <div className="flex flex-row">
               <p>
@@ -65,12 +65,12 @@ const HeroSection = () => {
           </div>
         </div>
         <div className="relative">
-          <div className="">
-            <div className="w-3xl absolute md:-bottom-27 md:-right-64">
-              <img src={banner.src} alt="" />
-            </div>
-            <div className="">
+          <div className="flex flex-col items-center justify-center">
+            <div className="md:mt-30 md:pr-25">
               <img src={circleWatch.src} alt="" />
+            </div>
+            <div className=" md:w-3xl md:absolute md:-bottom-58 md:-right-38">
+              <img src={banner.src} alt="" />
             </div>
           </div>
         </div>
