@@ -9,6 +9,7 @@ import image2 from '../../../app/image-2.png';
 import image3 from '../../../app/image-3.png';
 import banner from '../../../app/Banner Img.png';
 import circleWatch from '../../../app/Circle Button.png';
+import Image from 'next/image';
 
 const HeroSection = () => {
   return (
@@ -24,7 +25,7 @@ const HeroSection = () => {
                   business
                 </span>
               </p>
-              <img
+              <Image
                 src={rocket.src}
                 className="w-[100px] h-[100px]"
                 alt="Rocket"
@@ -40,7 +41,7 @@ const HeroSection = () => {
           <div className="flex flex-row gap-4 mt-4">
             <Button label="Explore More" />
             <div className="flex flex-row gap-4 items-center bg-white p-4">
-              <img
+              <Image
                 className="border border-gray-300 p-2 rounded-full"
                 src={phone.src}
                 alt=""
@@ -67,10 +68,10 @@ const HeroSection = () => {
         <div className="relative">
           <div className="flex flex-col items-center justify-center">
             <div className="md:mt-30 md:pr-25">
-              <img src={circleWatch.src} alt="" />
+              <Image src={circleWatch.src} alt="" />
             </div>
             <div className=" md:w-3xl md:absolute md:-bottom-58 md:-right-38">
-              <img src={banner.src} alt="" />
+              <Image src={banner.src} alt="" />
             </div>
           </div>
         </div>

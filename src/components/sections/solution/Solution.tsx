@@ -9,6 +9,7 @@ import React from 'react';
 import GradientButton from '@/components/common/GradientButton';
 import Button from '@/components/common/Button';
 import StatsRow from '@/components/common/StatsRow';
+import Image from 'next/image';
 
 const Solution = () => {
   return (
@@ -16,13 +17,13 @@ const Solution = () => {
       <div>
         <div className="flex flex-col w-full md:flex-row md:pb-20">
           <div className="flex flex-col md:relative md:w-1/2 ">
-            <img src={woman.src} alt="" className="md:w-80" />
-            <img
+            <Image src={woman.src} alt="" className="md:w-80" />
+            <Image
               src={group.src}
               alt=""
               className="md:absolute md:-bottom-10 md:left-70 "
             />
-            <img
+            <Image
               src={circle.src}
               alt=""
               className="md:absolute md:bottom-80 md:left-90"
@@ -56,7 +57,7 @@ const Solution = () => {
                 <Button label="More about us" />
               </div>
               <div>
-                <img src={ceo.src} alt="" className="w-30 mx-auto md:w-50" />
+                <Image src={ceo.src} alt="" className="w-30 mx-auto md:w-50" />
               </div>
             </div>
           </div>

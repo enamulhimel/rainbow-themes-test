@@ -4,6 +4,7 @@ import React from 'react';
 import blur from '../../../app/blur.png';
 import clear from '../../../app/clear.png';
 import Button from '@/components/common/Button';
+import Image from 'next/image';
 
 const Services = () => {
   return (
@@ -16,16 +17,16 @@ const Services = () => {
           </div>
           <div className="relative md:pt-10">
             <div className="absolute w-80  md:w-200 md:left-50">
-              <img src={blur.src} alt="" />
+              <Image src={blur.src} alt="" />
             </div>
             <div className="md:absolute w-80 md:w-220 md:top-23 md:left-40">
-              <img src={blur.src} alt="" />
+              <Image src={blur.src} alt="" />
             </div>
             <div className="md:absolute w-80 md:w-240 md:top-35 md:left-30">
-              <img src={blur.src} alt="" />
+              <Image src={blur.src} alt="" />
             </div>
             <div className="md:absolute w-80 md:w-260 md:top-50 md:left-20">
-              <img src={clear.src} alt="" />
+              <Image src={clear.src} alt="" />
             </div>
           </div>
           <div className="pt-5 md:pt-140 flex items-center justify-center">

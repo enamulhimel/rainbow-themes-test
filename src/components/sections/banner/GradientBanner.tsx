@@ -1,6 +1,7 @@
 import React from 'react';
 import union from '../../../app/Union.png';
 import star from '../../../app/Star 4.png';
+import Image from 'next/image';
 
 const GradientBanner: React.FC = () => {
   return (
@@ -8,13 +9,13 @@ const GradientBanner: React.FC = () => {
       <div className="flex flex-wrap justify-around items-center gap-6 uppercase font-bold text-sm sm:text-base md:text-5xl tracking-wide">
         {[
           'Creative',
-          <img src={union.src} alt="" key="union1" className="h-6 md:h-10" />,
+          <Image src={union.src} alt="" key="union1" className="h-6 md:h-10" />,
           'Solutions',
-          <img src={star.src} alt="" key="star" className="h-6 md:h-10" />,
+          <Image src={star.src} alt="" key="star" className="h-6 md:h-10" />,
           'Expert Guidance',
-          <img src={union.src} alt="" key="union2" className="h-6 md:h-10" />,
-          'Consulting'
-        ].map((item, index) => (
+          <Image src={union.src} alt="" key="union2" className="h-6 md:h-10" />,
+          'Consulting',
+        ].map((item, index) =>
           typeof item === 'string' ? (
             <span
               key={index}
@@ -24,9 +25,11 @@ const GradientBanner: React.FC = () => {
               {item}
             </span>
           ) : (
-            <span key={index} className="text-2xl">{item}</span>
+            <span key={index} className="text-2xl">
+              {item}
+            </span>
           )
-        ))}
+        )}
       </div>
     </div>
   );

@@ -9,6 +9,7 @@ import strategy from '../../../app/List-2.png';
 import image1 from '../../../app/image-1.png';
 import image2 from '../../../app/image-2.png';
 import subs from '../../../app/Subscribe.png';
+import Image from 'next/image';
 
 const FooterLogo = () => {
   return (
@@ -16,7 +17,7 @@ const FooterLogo = () => {
       <CommonWrapper>
         <div className="w-full flex flex-col md:flex-row gap-x-1">
           <div className="bg-[#110431] md:w-1/3 p-5 items-center justify-center">
-            <img src={logo.src} alt="" />
+            <Image src={logo.src} alt="" />
             <p className="text-white">
               Introducing our team of talented and skilled professionals who are
               ready to increase your productivity and bring your business.
@@ -43,7 +44,7 @@ const FooterLogo = () => {
               <h3 className="font-bold ">Quick Links</h3>
               <div className="text-base py-2">
                 <p>About Company</p>
-                <img src={strategy.src} alt="" />
+                <Image src={strategy.src} alt="" />
                 <p>Investor Presentation</p>
                 <p>Investor Career</p>
                 <p>Meet our Team</p>
@@ -65,21 +66,21 @@ const FooterLogo = () => {
               <h3 className="font-bold">Upcoming Event</h3>
               <div className="text-base py-2">
                 <div className="flex flex-row gap-x-3">
-                  <img className="w-10 h-10" src={image1.src} alt="" />
+                  <Image className="w-10 h-10" src={image1.src} alt="" />
                   <div>
                     <p>Bussiness Councilling</p>
                     <p className="text-gray-400">26 March, USA</p>
                   </div>
                 </div>
                 <div className="flex flex-row gap-x-3">
-                  <img className="w-10 h-10" src={image2.src} alt="" />
+                  <Image className="w-10 h-10" src={image2.src} alt="" />
                   <div>
                     <p>Email Marketing</p>
                     <p className="text-gray-400">30 January, London</p>
                   </div>
                 </div>
                 <div className="flex flex-rowm  gap-x-3">
-                  <img className="w-10 h-10" src={image1.src} alt="" />
+                  <Image className="w-10 h-10" src={image1.src} alt="" />
                   <div>
                     <p>Bussiness Councilling</p>
                     <p className="text-gray-400">16 May, Maxico</p>
@@ -89,7 +90,7 @@ const FooterLogo = () => {
             </div>
           </div>
         </div>
-        <img src={subs.src} alt="" />
+        <Image src={subs.src} alt="" />
         <div className="mt-10 flex items-center justify-between">
           <div className="text-white">
             <p>
